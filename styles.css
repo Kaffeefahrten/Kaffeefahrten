@@ -24,6 +24,22 @@ header p {
     font-size: 1.2rem;
 }
 
+/* Filterbereich */
+.filter {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.filter label {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.filter select {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
 /* Hauptbereich */
 main {
     max-width: 1200px;
