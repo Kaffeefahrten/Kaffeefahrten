@@ -3,94 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unsere Aktivitäten</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Date-Ideen</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Unsere geplanten Aktivitäten</h1>
-        <p>Hier kannst du geplante Aktivitäten in verschiedenen Kategorien speichern und filtern.</p>
+        <h1>Date-Ideen für uns</h1>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="#staedtetrip">Städtetrip</a></li>
+            <li><a href="#rezepte">Rezepte</a></li>
+            <li><a href="#filme">Filme</a></li>
+            <li><a href="#kunst-kultur">Kunst & Kultur</a></li>
+            <li><a href="#restaurants">Restaurants</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section class="filter">
-            <label for="category-filter">Filter nach Kategorie:</label>
-            <select id="category-filter" onchange="filterActivities()">
-                <option value="alle">Alle</option>
-                <option value="staedtetrip">Städtetrip</option>
-                <option value="rezepte">Rezepte</option>
-                <option value="filme">Filme</option>
-            </select>
+        <section id="staedtetrip">
+            <h2>Städtetrip</h2>
+            <ul>
+                <li>Paris erkunden</li>
+                <li>Amsterdam Grachtenfahrt</li>
+                <li>Wochenendausflug nach Prag</li>
+            </ul>
         </section>
 
-        <section class="activity-list" id="activity-list">
-            <div class="activity-item" data-category="staedtetrip">
-                <h2>Wochenende in Paris</h2>
-                <p><strong>Beschreibung:</strong> Ein romantisches Wochenende in der Stadt der Liebe.</p>
-                <p><strong>Dauer:</strong> 3 Tage</p>
-                <p><strong>Ort:</strong> Paris</p>
-                <a href="#">Mehr erfahren</a>
-            </div>
-
-            <div class="activity-item" data-category="rezepte">
-                <h2>Italienische Pasta selber machen</h2>
-                <p><strong>Beschreibung:</strong> Frische Pasta aus der eigenen Küche.</p>
-                <p><strong>Dauer:</strong> 1 Stunde</p>
-                <p><strong>Ort:</strong> Zuhause</p>
-                <a href="#">Mehr erfahren</a>
-            </div>
-
-            <div class="activity-item" data-category="filme">
-                <h2>Filmabend: Klassiker der 90er</h2>
-                <p><strong>Beschreibung:</strong> Genieße zusammen Filme wie "Titanic" oder "Matrix".</p>
-                <p><strong>Dauer:</strong> 2 Stunden</p>
-                <p><strong>Ort:</strong> Wohnzimmer</p>
-                <a href="#">Mehr erfahren</a>
-            </div>
-
-            <div class="activity-item" data-category="staedtetrip">
-                <h2>Berlin erkunden</h2>
-                <p><strong>Beschreibung:</strong> Sehenswürdigkeiten, Geschichte und Kultur in der Hauptstadt.</p>
-                <p><strong>Dauer:</strong> 2 Tage</p>
-                <p><strong>Ort:</strong> Berlin</p>
-                <a href="#">Mehr erfahren</a>
-            </div>
-
-            <div class="activity-item" data-category="rezepte">
-                <h2>Pizza backen</h2>
-                <p><strong>Beschreibung:</strong> Leckere Pizza mit selbstgemachtem Teig und frischen Zutaten.</p>
-                <p><strong>Dauer:</strong> 1,5 Stunden</p>
-                <p><strong>Ort:</strong> Zuhause</p>
-                <a href="#">Mehr erfahren</a>
-            </div>
-
-            <div class="activity-item" data-category="filme">
-                <h2>Filmabend: Science-Fiction</h2>
-                <p><strong>Beschreibung:</strong> Sci-Fi Filme wie "Interstellar" und "Blade Runner".</p>
-                <p><strong>Dauer:</strong> 2,5 Stunden</p>
-                <p><strong>Ort:</strong> Wohnzimmer</p>
-                <a href="#">Mehr erfahren</a>
-            </div>
+        <section id="rezepte">
+            <h2>Rezepte</h2>
+            <ul>
+                <li>Pasta selbst machen</li>
+                <li>Sushi-Abend</li>
+                <li>Pancake-Brunch</li>
+            </ul>
         </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2024 Unsere Aktivitäten. Alle Rechte vorbehalten.</p>
-    </footer>
+        <section id="filme">
+            <h2>Filme</h2>
+            <ul>
+                <li>Filmabend mit "Inception"</li>
+                <li>Kino-Date für den neuen Marvel-Film</li>
+                <li>Retro-Filmnacht mit Klassikern</li>
+            </ul>
+        </section>
 
-    <script>
-        function filterActivities() {
-            const filter = document.getElementById('category-filter').value;
-            const activities = document.querySelectorAll('.activity-item');
-
-            activities.forEach(activity => {
-                if (filter === 'alle' || activity.getAttribute('data-category') === filter) {
-                    activity.style.display = 'block';
-                } else {
-                    activity.style.display = 'none';
-                }
-            });
-        }
-    </script>
-</body>
-</html>
+        <section id="kunst-kultur">
+            <h2>Kunst
