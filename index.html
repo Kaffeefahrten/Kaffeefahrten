@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Date-Ideen</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -22,48 +22,43 @@
     </nav>
 
     <main>
+        <!-- Kategorie Städtetrip -->
         <section id="staedtetrip">
             <h2>Städtetrip</h2>
             <ul>
                 <li><a href="#" class="open-modal" data-modal="paris">Paris erkunden</a></li>
-                <li><a href="#" class="open-modal" data-modal="amsterdam">Amsterdam Grachtenfahrt</a></li>
-                <li><a href="#" class="open-modal" data-modal="prag">Wochenendausflug nach Prag</a></li>
             </ul>
         </section>
 
+        <!-- Kategorie Rezepte -->
         <section id="rezepte">
             <h2>Rezepte</h2>
             <ul>
                 <li><a href="#" class="open-modal" data-modal="pasta">Pasta selbst machen</a></li>
-                <li><a href="#" class="open-modal" data-modal="sushi">Sushi-Abend</a></li>
-                <li><a href="#" class="open-modal" data-modal="pancakes">Pancake-Brunch</a></li>
             </ul>
         </section>
 
+        <!-- Kategorie Filme -->
         <section id="filme">
             <h2>Filme</h2>
             <ul>
                 <li><a href="#" class="open-modal" data-modal="inception">Filmabend mit "Inception"</a></li>
-                <li><a href="#" class="open-modal" data-modal="marvel">Kino-Date für den neuen Marvel-Film</a></li>
-                <li><a href="#" class="open-modal" data-modal="klassiker">Retro-Filmnacht mit Klassikern</a></li>
             </ul>
         </section>
 
+        <!-- Kategorie Kunst & Kultur -->
         <section id="kunst-kultur">
             <h2>Kunst & Kultur</h2>
             <ul>
                 <li><a href="#" class="open-modal" data-modal="louvre">Museumstag im Louvre</a></li>
-                <li><a href="#" class="open-modal" data-modal="musical">Besuch eines Musicals</a></li>
-                <li><a href="#" class="open-modal" data-modal="galerie">Kunstgalerie entdecken</a></li>
             </ul>
         </section>
 
+        <!-- Kategorie Restaurants -->
         <section id="restaurants">
             <h2>Restaurants</h2>
             <ul>
                 <li><a href="#" class="open-modal" data-modal="italienisch">Candle-Light-Dinner in einem italienischen Restaurant</a></li>
-                <li><a href="#" class="open-modal" data-modal="brunch">Brunch im Café am Fluss</a></li>
-                <li><a href="#" class="open-modal" data-modal="thai">Exotische Küche probieren (z.B. Thai)</a></li>
             </ul>
         </section>
     </main>
@@ -73,15 +68,50 @@
     </footer>
 
     <!-- Modals -->
+    <!-- Städtetrip Modal -->
     <div id="paris" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Paris erkunden</h2>
-            <p>Details: Entdecke die romantischsten Orte in Paris, wie den Eiffelturm, Montmartre und vieles mehr.</p>
+            <p>Details: Entdecke die romantischsten Orte in Paris, wie den Eiffelturm, Montmartre und den Louvre. Genieße ein romantisches Picknick im Jardin des Tuileries.</p>
         </div>
     </div>
 
-    <!-- Weitere Modals... -->
+    <!-- Rezepte Modal -->
+    <div id="pasta" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Pasta selbst machen</h2>
+            <p>Rezept: Zutaten - 400g Mehl, 4 Eier, 1 Prise Salz. Knete den Teig, rolle ihn dünn aus und schneide ihn in deine Lieblingsnudeln. Danach frische Tomatensauce dazu!</p>
+        </div>
+    </div>
+
+    <!-- Filme Modal -->
+    <div id="inception" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Filmabend mit "Inception"</h2>
+            <p>Details: Schau dir den spannenden Sci-Fi-Thriller "Inception" an und diskutiere über die komplexen Traumwelten und den offenen Schluss.</p>
+        </div>
+    </div>
+
+    <!-- Kunst & Kultur Modal -->
+    <div id="louvre" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Museumstag im Louvre</h2>
+            <p>Details: Verbringe einen Tag im Louvre, entdecke weltberühmte Kunstwerke wie die Mona Lisa und die Venus von Milo. Perfekt für ein kunstvolles Date.</p>
+        </div>
+    </div>
+
+    <!-- Restaurants Modal -->
+    <div id="italienisch" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Candle-Light-Dinner in einem italienischen Restaurant</h2>
+            <p>Details: Genieße ein romantisches Abendessen bei Kerzenschein in einem gemütlichen italienischen Restaurant. Ideal für besondere Anlässe.</p>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
