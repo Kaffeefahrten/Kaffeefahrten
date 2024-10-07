@@ -3,45 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aktivitätenliste</title>
+    <title>Unsere Aktivitäten</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Entdecke unsere Aktivitäten</h1>
-        <p>Hier findest du eine Übersicht unserer spannenden Aktivitäten mit Informationen zu Dauer, Ort und weiterführenden Links.</p>
+        <h1>Unsere geplanten Aktivitäten</h1>
+        <p>Hier kannst du geplante Aktivitäten in verschiedenen Kategorien speichern und filtern.</p>
     </header>
 
     <main>
-        <section class="activity-list">
-            <div class="activity-item">
-                <h2>Wanderung im Wald</h2>
-                <p><strong>Beschreibung:</strong> Eine geführte Wanderung durch den malerischen Wald.</p>
-                <p><strong>Dauer:</strong> 3 Stunden</p>
-                <p><strong>Ort:</strong> Nationalpark</p>
+        <section class="filter">
+            <label for="category-filter">Filter nach Kategorie:</label>
+            <select id="category-filter" onchange="filterActivities()">
+                <option value="alle">Alle</option>
+                <option value="staedtetrip">Städtetrip</option>
+                <option value="rezepte">Rezepte</option>
+                <option value="filme">Filme</option>
+            </select>
+        </section>
+
+        <section class="activity-list" id="activity-list">
+            <div class="activity-item" data-category="staedtetrip">
+                <h2>Wochenende in Paris</h2>
+                <p><strong>Beschreibung:</strong> Ein romantisches Wochenende in der Stadt der Liebe.</p>
+                <p><strong>Dauer:</strong> 3 Tage</p>
+                <p><strong>Ort:</strong> Paris</p>
                 <a href="#">Mehr erfahren</a>
             </div>
 
-            <div class="activity-item">
-                <h2>Yoga am Strand</h2>
-                <p><strong>Beschreibung:</strong> Entspannen Sie bei einer Yoga-Session am frühen Morgen.</p>
-                <p><strong>Dauer:</strong> 1,5 Stunden</p>
-                <p><strong>Ort:</strong> Küstenstreifen</p>
+            <div class="activity-item" data-category="rezepte">
+                <h2>Italienische Pasta selber machen</h2>
+                <p><strong>Beschreibung:</strong> Frische Pasta aus der eigenen Küche.</p>
+                <p><strong>Dauer:</strong> 1 Stunde</p>
+                <p><strong>Ort:</strong> Zuhause</p>
                 <a href="#">Mehr erfahren</a>
             </div>
 
-            <div class="activity-item">
-                <h2>Radtour durch die Stadt</h2>
-                <p><strong>Beschreibung:</strong> Erkunde die historische Altstadt mit dem Fahrrad.</p>
+            <div class="activity-item" data-category="filme">
+                <h2>Filmabend: Klassiker der 90er</h2>
+                <p><strong>Beschreibung:</strong> Genieße zusammen Filme wie "Titanic" oder "Matrix".</p>
                 <p><strong>Dauer:</strong> 2 Stunden</p>
-                <p><strong>Ort:</strong> Innenstadt</p>
+                <p><strong>Ort:</strong> Wohnzimmer</p>
+                <a href="#">Mehr erfahren</a>
+            </div>
+
+            <div class="activity-item" data-category="staedtetrip">
+                <h2>Berlin erkunden</h2>
+                <p><strong>Beschreibung:</strong> Sehenswürdigkeiten, Geschichte und Kultur in der Hauptstadt.</p>
+                <p><strong>Dauer:</strong> 2 Tage</p>
+                <p><strong>Ort:</strong> Berlin</p>
+                <a href="#">Mehr erfahren</a>
+            </div>
+
+            <div class="activity-item" data-category="rezepte">
+                <h2>Pizza backen</h2>
+                <p><strong>Beschreibung:</strong> Leckere Pizza mit selbstgemachtem Teig und frischen Zutaten.</p>
+                <p><strong>Dauer:</strong> 1,5 Stunden</p>
+                <p><strong>Ort:</strong> Zuhause</p>
+                <a href="#">Mehr erfahren</a>
+            </div>
+
+            <div class="activity-item" data-category="filme">
+                <h2>Filmabend: Science-Fiction</h2>
+                <p><strong>Beschreibung:</strong> Sci-Fi Filme wie "Interstellar" und "Blade Runner".</p>
+                <p><strong>Dauer:</strong> 2,5 Stunden</p>
+                <p><strong>Ort:</strong> Wohnzimmer</p>
                 <a href="#">Mehr erfahren</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Aktivitätenliste. Alle Rechte vorbehalten.</p>
+        <p>&copy; 2024 Unsere Aktivitäten. Alle Rechte vorbehalten.</p>
     </footer>
+
+    <script>
+        function filterActivities() {
+            const filter = document.getElementById('category-filter').value;
+            const activities = document.querySelectorAll('.activity-item');
+
+            activities.forEach(activity => {
+                if (filter === 'alle' || activity.getAttribute('data-category') === filter) {
+                    activity.style.display = 'block';
+                } else {
+                    activity.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </body>
 </html>
