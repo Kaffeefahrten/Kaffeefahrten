@@ -1,3 +1,4 @@
+/* Grundlegende Stile */
 * {
     margin: 0;
     padding: 0;
@@ -72,6 +73,16 @@ ul li {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: #4CAF50;
+}
+
 footer {
     background-color: #333;
     color: white;
@@ -79,8 +90,7 @@ footer {
     padding: 10px;
 }
 
-/* Bestehende Stile... */
-
+/* Modale Stile */
 .modal {
     display: none;
     position: fixed;
@@ -112,4 +122,3 @@ footer {
 .close:hover {
     color: red;
 }
-
