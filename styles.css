@@ -3,14 +3,14 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff8e1;
-    color: #5c5c5c;
+    background-color: #e8f5e9;
+    color: #4e4e4e;
     line-height: 1.6;
 }
 
 /* Header */
 header {
-    background-color: #ffab91;
+    background-color: #66bb6a;
     color: #fff;
     text-align: center;
     padding: 2rem;
@@ -39,7 +39,7 @@ main {
 }
 
 .activity-item {
-    background-color: #ffe0b2;
+    background-color: #a5d6a7;
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -51,7 +51,7 @@ main {
 }
 
 .activity-item h2 {
-    color: #e64a19;
+    color: #388e3c;
     margin-bottom: 0.75rem;
 }
 
@@ -63,7 +63,7 @@ main {
     display: inline-block;
     margin-top: 1rem;
     text-decoration: none;
-    background-color: #ff7043;
+    background-color: #43a047;
     color: #fff;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -71,13 +71,13 @@ main {
 }
 
 .activity-item a:hover {
-    background-color: #d84315;
+    background-color: #2e7d32;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 1.5rem;
-    background-color: #ffab91;
+    background-color: #66bb6a;
     color: #fff;
 }
